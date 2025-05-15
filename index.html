@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style type="text/css">
+            TABLE {
+             font-size: 50px;
+             background: #dc0; /* Цвет фона таблицы */
+             border: 5px double #000; /* Рамка вокруг таблицы */
+            }
+            TD, TH {
+             padding: 5px; /* Поля вокруг текста */
+             border: 2px solid black; /* Рамка вокруг ячеек */
+            }
+           </style>
+</head>
+<body>
+
+    <h1 style="font-size: 50px;"> РАСШИРЕННЫЙ КЛИЕНТ </h1>
+    <h1>Клиент-серверное взаимодействие</h1>
+
+<main>
+    <h1>Сервер - truruki.ru</h1>
+    <form class="f5">
+        <h2> ******************** </h2>
+        <button type="submit">
+            Загрузить информацию с сервера 5
+        </button>
+    </form>
+    <div class="result5"> </div>
+</main>
+
+<h1>Способ №1 Обработка формы перед отправкой скриптом</h1>
+<h1> Добавь данных! </h1>
+<form method="post" name="form1" id="form1" style="background-color:gray;margin:10px;padding:20px;">
+    <p>Имя <input name="name" type="text"> </p>
+    <p>Возраст <input name="age" type="text"> </p>
+    <p><input name="submit" type="submit" value="push!"> </p>
+
+
+</form>
+
+<h1>Способ №2 (фуфло!) Переход на серверную страницу "http://truruki.ru/create/" Выдаст серверную страницу </h1>
+<h1> Добавь данных! </h1>
+<form action="http://truruki.ru/create/" method="post" name="form2" id="form2" style="background-color:gray;margin:10px;padding:20px;">
+    <p>Имя <input name="name" type="text"> </p>
+    <p>Возраст <input name="age" type="text"> </p>
+    <p><input name="submit" type="submit" value="push!"> </p>
+
+
+</form>
+
+</br>
+<p>*******************************************************************************</p>
+</br>
+<div class="result6"> </div>
+</br>
+<p>*******************************************************************************</p>
+</br>
+<div class="result7"> </div>
+<p>*******************************************************************************</p>
+</br>
+<div class="result8"> </div>
+<p>************************its 9****получили с помощью AXIOS**********************</p>
+</br>
+<div class="result9"> </div>
+<p>************************its 10****форма ввода в модальном окне*****************</p>
+</br>
+
+<button id="openModal">Открыть форму</button>
+
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+    background: rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:20px; border-radius:5px; min-width:300px;">
+    <p>Введите данные:</p>
+    <input type="text" id="userInput" style="width:100%; margin-bottom:10px;" />
+    <div>
+      <button id="okBtn">OK</button>
+      <button id="cancelBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<p>************************its 11****форма ввода в модальном окне (наш случай)*****************</p>
+</br>
+
+<button id="openModal11">Открыть форму11</button>
+
+<div id="modal11" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+    background: rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:20px; border-radius:5px; min-width:300px;">
+    <p>Введите данные:</p>
+    <p>имя: <input type="text" id="userInput11" style="width:100%; margin-bottom:10px;" /></p>
+    <p>возраст: <input type="text" id="ageInput11" style="width:100%; margin-bottom:10px;" /></p>
+    <div>
+      <button id="okBtn11">OK</button>
+      <button id="cancelBtn11">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<p>************************its 12**************************</p>
+</br>
+<div class="result12"> </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
