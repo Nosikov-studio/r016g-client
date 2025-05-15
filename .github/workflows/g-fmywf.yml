@@ -1,7 +1,7 @@
 name: MFg
 on: 
-  #push    
-  workflow_dispatch
+  push    
+  #workflow_dispatch
 
 env:
   SERVER_HOST: '85.28.47.165'
