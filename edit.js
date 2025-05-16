@@ -38,7 +38,10 @@ const form1 = document.getElementById('fmed');
 console.log(FormDataObject.id);
 console.log(FormDataObject.name);
 console.log(FormDataObject.age);
-
+let nameP;
+let ageP;
+if (FormDataObject.name) {nameP=FormDataObject.name;} else {nameP=nameParam;}
+if (FormDataObject.age) {ageP=FormDataObject.age;} else {ageP=ageParam;}
 
   fetch('http://truruki.ru/api/edit', {
     method: 'POST',
@@ -46,7 +49,8 @@ console.log(FormDataObject.age);
       'Content-Type': 'application/json',
       },
     body: JSON.stringify({
-      ...FormDataObject,
+      name: nameP,
+      age: ageP,
       id: idParam,
       views: 0,
     })
