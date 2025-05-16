@@ -35,6 +35,10 @@ const form1 = document.getElementById('fmed');
   const formData = new FormData(form1); // Сбор данных формы
   const FormDataObject = Object.fromEntries(formData);
 
+console.log(FormDataObject.id);
+console.log(FormDataObject.name);
+console.log(FormDataObject.age);
+
 
   fetch('http://truruki.ru/api/edit', {
     method: 'POST',
